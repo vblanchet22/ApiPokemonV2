@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pokemon.css">
+</head>
+<body>
+<h1>Informations sur un Pokémon</h1>
+<form id="pokemon-form">
+    <label for="pokemon-number">Numéro du Pokémon :</label>
+    <input type="text" id="pokemon-number" required>
+    <button type="submit">Rechercher</button>
+</form>
+<button id="view-all-button">Voir tous les Pokémon</button>
+<div id="pokemon-info" class="hidden">
+    <h2>Informations du Pokémon:</h2>
+    <p><span id="pokemon-name"></span></p>
+    <p><span id="pokemon-weight"></span></p>
+    <p><span id="pokemon-types"></span></p>
+    <img id="pokemon-image" src="" alt="Image du Pokémon">
+</div>
+
+<div id="evolution-info" class="hidden">
+    <h2>Évolutions:</h2>
+    <div id="evolution-list"></div>
+</div>
+
+<script src="pokemon.js"></script>
+</body>
+</html>
